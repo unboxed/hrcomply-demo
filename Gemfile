@@ -19,4 +19,5 @@ end
 
 group :production do
   gem 'activerecord-jdbcmssql-adapter', '~> 1.3.11'
+  gem 'jdbc-mssql-azure', '~> 0.0.2'
 end
