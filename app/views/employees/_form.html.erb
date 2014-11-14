@@ -1,0 +1,7 @@
+<%= simple_form_for(@employee, html: { class: 'form-vertical' }) do |form| %>
+  <%= form.input :name %>
+  <%= form.input :title %>
+  <%= form.input :notes, input_html: { rows: 6 } %>
+  <%= form.submit class: 'btn btn-primary' %>
+  <%= link_to 'Cancel', employees_path, class: 'btn btn-default' %>
+<% end %>

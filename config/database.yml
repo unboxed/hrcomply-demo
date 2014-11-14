@@ -1,0 +1,11 @@
+development:
+  adapter: mysql
+  url: mysql://root@localhost/hrcomply_development
+
+test:
+  adapter: mysql
+  url: mysql://root@localhost/hrcomply_test
+
+production:
+  adapter: mssql
+  url: <%= ENV['DATABASE_URL'] %>

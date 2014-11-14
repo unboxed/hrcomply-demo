@@ -1,0 +1,33 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  padding-top: 30px;
+}
+
+a.glyphicon {
+  &:hover {
+    color: $link-color;
+    text-decoration: none;
+  }
+
+  &:focus {
+    color: $link-color;
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+abbr[title=required] {
+  border-bottom: none;
+  color: $brand-danger;
+  text-decoration: none;
+}
+
+.modal-dialog {
+  margin-top: 10%;
+}
+
+.flash {
+  margin: 40px 0 -20px 0;
+}

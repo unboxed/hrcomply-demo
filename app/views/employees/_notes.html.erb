@@ -1,0 +1,22 @@
+<%= link_to '', '#', class: 'glyphicon glyphicon-info-sign', data: { toggle: 'modal', target: "#employee_notes_#{employee.id}" } %>
+<%= content_tag :div, id: "employee_notes_#{employee.id}", class: 'modal fade' do %>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Employee Notes</h4>
+      </div>
+      <div class="modal-body">
+        <% if employee.notes? %>
+          <p><%= employee.notes %></p>
+        <% else %>
+          <p><em class="text-muted">There are no notes for <%= employee.name %></em></p>
+        <% end %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <%= link_to 'Edit Notes', edit_employee_path(employee), class: 'btn btn-primary' %>
+      </div>
+    </div>
+  </div>
+<% end %>
