@@ -8,4 +8,4 @@ test:
 
 production:
   adapter: mssql
-  url: <%= ENV['DATABASE_URL'] %>
+  url: <%= ENV['HRCOMPLY_DATABASE_URL'] %>
