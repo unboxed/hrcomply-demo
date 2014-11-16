@@ -10,6 +10,10 @@ gem 'therubyrhino', '~> 2.0.4'
 gem 'tzinfo-data', '~> 1.0'
 gem 'uglifier', '>= 1.3.0'
 
+group :development do
+  gem 'warbler', '~> 1.4.4'
+end
+
 group :development, :test do
   gem 'activerecord-jdbcmysql-adapter', '~> 1.3.11'
   gem 'capybara', '~> 2.4.4'
