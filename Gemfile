@@ -7,6 +7,7 @@ gem 'jquery-rails', '~> 3.1.2'
 gem 'sass-rails', '~> 4.0.3'
 gem 'simple_form', github: 'plataformatec/simple_form'
 gem 'therubyrhino', '~> 2.0.4'
+gem 'tzinfo-data', '~> 1.0'
 gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
