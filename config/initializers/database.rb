@@ -10,6 +10,8 @@ if defined?(ActiveRecord::ConnectionAdapters::MSSQLAdapter)
           CREATE CLUSTERED INDEX [idx_schema_migrations_version] ON [schema_migrations] ([version])
         SQL
       end
+
+      Time::DATE_FORMATS[:db] = "%Y-%m-%dT%H:%M:%S"
     end
   end
 end
