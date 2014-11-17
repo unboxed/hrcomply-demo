@@ -1,9 +1,0 @@
-== README
-
-Demonstration of a JRuby on Rails application
-
-* Ruby on Rails 4.1.7
-* JRuby 1.7.16.1
-* Java 1.6 or later
-* MySQL for development and testing
-* MSSQL for production via DATABASE_URL environment variable
