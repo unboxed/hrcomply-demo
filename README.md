@@ -36,3 +36,5 @@ To install the WAR file either use the Tomcat manager web application to uploade
 it or copy it to `CATALINA_HOME/webapps`. The application assumes that it is
 nstalled in the ROOT context (i.e. the URL path is '/') - mounting it at another
 path will break the compiled assets.
+
+The WAR file can be downloaded from the releases section of this repository.
